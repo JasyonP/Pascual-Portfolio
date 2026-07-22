@@ -23,19 +23,19 @@ const focusAreas = [
 
 const projectCards = [
   {
-    title: 'Capstone System Project',
-    type: 'System UI',
-    description: 'A clean interface direction for managing records, workflows, and project data.',
+    title: 'E-HIRAM',
+    type: 'Capstone Project',
+    description: 'a web-based equipment borrowing and inventory management system featuring equipment request and approval workflows, inventory tracking, role based access control, automated record keeping, and real time monitoring to improve operational efficiency and asset accountability.',
   },
   {
-    title: 'HR Management System',
-    type: 'Dashboard',
-    description: 'Organized screens for employee data, admin tasks, and operational tracking.',
+    title: 'Student Management System',
+    type: 'Java Project',
+    description: 'Developed a Java-based Student Management System using Object Oriented Programming principles and array-based data storage, implementing student record management with CRUD operations, data validation, and a menu driven interface to organize and manage student information efficiently.',
   },
   {
-    title: 'Portfolio Website',
-    type: 'Personal Brand',
-    description: 'A dark, responsive portfolio with sidebar navigation and focused content sections.',
+    title: 'Space Shooter Game',
+    type: 'Python Project',
+    description: 'Developed a 2D Space Shooter game using Python and Pygame, applying Object Oriented Programming principles to implement core game mechanics, including a main menu, ship selection, player health system, score tracking, enemy interactions, and gameplay logic.',
   },
 ]
 
@@ -94,7 +94,7 @@ const mainProjects = [
   ],
   },
   {
-    title: 'Java App Project',
+    title: 'Student Management System',
     type: 'Desktop Application',
     image: '/assets/images/projects/javaproject.jpg',
     description:
@@ -111,8 +111,8 @@ const mainProjects = [
   ],
   },
   {
-    title: 'Python Project',
-    type: 'Game Development',
+    title: 'Space Shooter Game',
+    type: 'Game Application',
     image: '/assets/images/projects/pythongame/cosmos.png',
     description:
       'A desktop application focused on data management and practical workflows.',
@@ -128,20 +128,25 @@ const mainProjects = [
 
 const experienceEntries = [
   {
-    period: 'Current',
-    title: 'Frontend Developer',
-    description: 'Designing and building responsive portfolio pages, UI sections, and reusable interface patterns.',
-  },
-  {
-    period: 'Projects',
-    title: 'System Interfaces',
-    description: 'Creating layouts for admin systems, dashboards, monitoring tools, and capstone-style workflows.',
-  },
-  {
-    period: 'Practice',
-    title: 'Design + Build',
-    description: 'Combining layout, typography, and interaction details to make pages feel polished and intentional.',
-  },
+    period: "May 2025 - October 2025",
+    type: "On-the-Job Training (500 Hours)",
+    role: "On-the-job Trainee",
+    company: "Management Information System Office",
+    organization: "Subic Bay Metropolitan Authority (SBMA)",
+    location: "Subic Bay Freeport Zone, Philippines",
+
+    description:
+      "Completed a 500-hour On-the-Job Training program supporting daily IT operations, hardware asset management, and technical service requests.",
+
+    highlights: [
+      "Organized and maintained hard drive inventory by department.",
+      "Reformatted BitLocker-encrypted hard drives for secure redeployment.",
+      "Processed and coordinated IT job orders from multiple departments.",
+      "Facilitated the transfer of technical documents and request forms.",
+      "Supported daily IT operations and responded to service requests.",
+      "Maintained records of IT assets, job requests, and document transfers."
+    ]
+  }
 ]
 
 const skillGroups = [
@@ -648,13 +653,13 @@ function HomePage({ onOpenPage }) {
             </div>
           </div>
 
-          <div className="timeline-list">
-            <div className="timeline-item">
+          <div className="timeline-list-home">
+            <div className="timeline-item-home">
               <span>Current</span>
               <h3>Frontend Developer</h3>
               <p>Designing and building responsive portfolio pages, UI sections, and reusable interface patterns.</p>
             </div>
-            <div className="timeline-item">
+            <div className="timeline-item-home">
               <span>Projects</span>
               <h3>System Interfaces</h3>
               <p>Creating layouts for admin systems, dashboards, monitoring tools, and capstone-style workflows.</p>
@@ -667,7 +672,7 @@ function HomePage({ onOpenPage }) {
         <div className="section-inner">
           <div className="section-heading">
             <p className="eyebrow">Skills</p>
-            <h2>Tools and frontend skills I use to build clean web interfaces.</h2>
+            <h2>Tools and Stacks I use to build clean web interfaces.</h2>
             <p className="skills-intro">
               A quick look at my core stack and the everyday tools I work with. Visit the Skills page for the full, detailed breakdown.
             </p>
@@ -854,4 +859,5 @@ export default function App() {
       <SnapshotModal item={selectedSnapshot} onClose={() => setSelectedSnapshot(null)} onNavigate={handleNavigate} />
     </div>
   )
+  
 }

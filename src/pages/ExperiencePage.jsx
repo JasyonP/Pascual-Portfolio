@@ -17,19 +17,76 @@ export default function ExperiencePage({ experiences, onBack }) {
           </div>
         </div>
       </section>
+      <section className="page-section">       
+  <div className="section-inner">
 
-      <section className="page-section">
-        <div className="section-inner">
-          <div className="page-list">
-            {experiences.map((entry) => (
-              <article className="page-card" key={entry.title}>
-                <p className="page-card-kicker">{entry.period}</p>
-                <h2>{entry.title}</h2>
-                <p>{entry.description}</p>
-              </article>
-            ))}
+    <div className="experience-timeline">
+
+      {experiences.map((entry, index) => (
+        <div className="timeline-item" key={index}>
+
+          <div className="timeline-left">
+
+          <div className="timeline-icon">
+            <img src="public/assets/images/icons/sbmalogo.png" alt="SBMA" />
           </div>
+
+            {index !== experiences.length - 1 && (
+              <div className="timeline-line"></div>
+            )}
+
+          </div>
+
+          <div className="timeline-right">
+
+            <div className="experience-card">
+
+              <div className="experience-header">
+
+                <div>
+
+                  <span className="experience-type">
+                    {entry.type}
+                  </span>
+                  <h2>{entry.company}</h2>
+                  <h3>{entry.role}</h3>
+
+                  <p className="experience-location">
+                    {entry.organization}
+                  </p>
+
+                  <p className="experience-location">
+                    {entry.location}
+                  </p>
+
+                </div>
+
+                <span className="experience-date">
+                  {entry.period}
+                </span>
+
+              </div>
+
+              <p className="experience-description">
+                {entry.description}
+              </p>
+
+              <li className="experience-highlights">
+                {entry.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </li>
+
+            </div>
+
+          </div>
+
         </div>
+      ))}
+
+    </div>
+
+  </div>
       </section>
     </div>
   )
