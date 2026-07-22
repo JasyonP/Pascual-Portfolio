@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ICON_BASE = '/assets/images/icons'
+const ICON_BASE = `${import.meta.env.BASE_URL}assets/images/icons`
 
 function SkillVisual({ item, size = 32 }) {
   if (item.icon) {

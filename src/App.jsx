@@ -248,10 +248,11 @@ const sidebarHighlights = {
 }
 
 const socialIconFiles = {
-  github: '/assets/images/icons/github.png',
-  linkedin: '/assets/images/icons/linkedin.png',
-  gmail: '/assets/images/icons/gmail.png',
+  github: `${import.meta.env.BASE_URL}assets/images/icons/github.png`,
+  linkedin: `${import.meta.env.BASE_URL}assets/images/icons/linkedin.png`,
+  gmail: `${import.meta.env.BASE_URL}assets/images/icons/gmail.png`,
 }
+
 
 function AnimatedHeroBackdrop() {
   return (

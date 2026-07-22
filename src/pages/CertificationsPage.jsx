@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const CERTIFICATE_ASSET_BASE = '/assets/documents/certifications'
+const CERTIFICATE_ASSET_BASE = `${import.meta.env.BASE_URL}assets/documents/certifications`
 
 const certificationSections = [
   {
