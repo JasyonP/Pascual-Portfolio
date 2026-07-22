@@ -38,91 +38,91 @@ const projectCards = [
     description: 'Developed a 2D Space Shooter game using Python and Pygame, applying Object Oriented Programming principles to implement core game mechanics, including a main menu, ship selection, player health system, score tracking, enemy interactions, and gameplay logic.',
   },
 ]
-
+const PROJECT_ASSET_BASE = `${import.meta.env.BASE_URL}assets/images/projects`
 const mainProjects = [
   {
     title: 'E-HIRAM',
     type: 'Capstone Project',
-    image: 'assets/images/projects/ehiram/ehiram.png',
+    image: `${PROJECT_ASSET_BASE}/ehiram/ehiram.png`,
     description:
       'A Web-based Electronic Hardware Inventory, Request, and Asset Management System for the Management Information System Department of Subic Bay Metropolitan Authority.',
     stack: ['React', 'Laravel', 'MySQL', 'Tailwind CSS', 'Javascript'],
     images: [
-    '/assets/images/projects/ehiram/ehiram.png',
-    '/assets/images/projects/ehiram/ehiram1.png',
-    '/assets/images/projects/ehiram/ehiram2.png',
-    '/assets/images/projects/ehiram/ehiram3.png',
-    '/assets/images/projects/ehiram/ehiram4.png',
-    '/assets/images/projects/ehiram/ehiram5.png',
-    '/assets/images/projects/ehiram/ehiram6.png',
-    '/assets/images/projects/ehiram/ehiram7.png',
-  ],
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram1.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram2.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram3.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram4.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram5.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram6.png`,
+      `${PROJECT_ASSET_BASE}/ehiram/ehiram7.png`,
+    ],
   },
-   {
+  {
     title: 'Stock Monitoring System',
     type: 'Web Application',
-    image: '/assets/images/projects/hsosms.jpg',
+    image: `${PROJECT_ASSET_BASE}/hsosms.jpg`,
     description:
       'A system interface for employee management, attendance tracking, and admin actions.',
     stack: ['Laravel', 'Tailwind', 'Php', 'MySql', 'Javascipt'],
-     images: [
-    '/assets/images/projects/hsosms.jpg',
-    '/assets/images/projects/hsosms2.jpg'
-  ],
+    images: [
+      `${PROJECT_ASSET_BASE}/hsosms.jpg`,
+      `${PROJECT_ASSET_BASE}/hsosms2.jpg`,
+    ],
   },
   {
     title: 'HR Management System',
     type: 'Web Application',
-    image: '/assets/images/projects/hrms.jpg',
+    image: `${PROJECT_ASSET_BASE}/hrms.jpg`,
     description:
       'A system interface for employee management, attendance tracking, and admin actions.',
     stack: ['Laravel', 'Php', 'Bootstrap', 'MySql', 'Javascipt'],
-     images: [
-    '/assets/images/projects/hrms.jpg',
-    '/assets/images/projects/hrms2.jpg'
-  ],
+    images: [
+      `${PROJECT_ASSET_BASE}/hrms.jpg`,
+      `${PROJECT_ASSET_BASE}/hrms2.jpg`,
+    ],
   },
   {
     title: 'Patient and Inventory Management System',
     type: 'Web Application',
-    image: '/assets/images/projects/pims.jpg',
+    image: `${PROJECT_ASSET_BASE}/pims.jpg`,
     description:
       'A responsive portfolio focused on clean design, smooth animations, and project storytelling.',
     stack: ['CodeIgniter', 'Php', 'Bootstrap', 'MySql', 'Javascript'],
-     images: [
-    '/assets/images/projects/pims.jpg'
-  ],
+    images: [
+      `${PROJECT_ASSET_BASE}/pims.jpg`,
+    ],
   },
   {
     title: 'Student Management System',
     type: 'Desktop Application',
-    image: '/assets/images/projects/javaproject.jpg',
+    image: `${PROJECT_ASSET_BASE}/javaproject.jpg`,
     description:
       'A desktop application focused on data management and practical workflows.',
     stack: ['Java', 'Java FX'],
-     images: [
-    '/assets/images/projects/javaproject/java.png',
-    '/assets/images/projects/javaproject/java1.png',
-    '/assets/images/projects/javaproject/java2.png',
-    '/assets/images/projects/javaproject/java3.png',
-    '/assets/images/projects/javaproject/java4.png',
-    '/assets/images/projects/javaproject/java5.png',
-    '/assets/images/projects/javaproject/java6.png',
-  ],
+    images: [
+      `${PROJECT_ASSET_BASE}/javaproject/java.png`,
+      `${PROJECT_ASSET_BASE}/javaproject/java1.png`,
+      `${PROJECT_ASSET_BASE}/javaproject/java2.png`,
+      `${PROJECT_ASSET_BASE}/javaproject/java3.png`,
+      `${PROJECT_ASSET_BASE}/javaproject/java4.png`,
+      `${PROJECT_ASSET_BASE}/javaproject/java5.png`,
+      `${PROJECT_ASSET_BASE}/javaproject/java6.png`,
+    ],
   },
   {
     title: 'Space Shooter Game',
     type: 'Game Application',
-    image: '/assets/images/projects/pythongame/cosmos.png',
+    image: `${PROJECT_ASSET_BASE}/pythongame/cosmos.png`,
     description:
       'A desktop application focused on data management and practical workflows.',
     stack: ['Python', 'Pygame'],
-     images: [
-    '/assets/images/projects/pythongame/cosmos.png',
-    '/assets/images/projects/pythongame/cosmos1.png',
-    '/assets/images/projects/pythongame/cosmos2.png',
-    '/assets/images/projects/pythongame/cosmos3.png'
-  ],
+    images: [
+      `${PROJECT_ASSET_BASE}/pythongame/cosmos.png`,
+      `${PROJECT_ASSET_BASE}/pythongame/cosmos1.png`,
+      `${PROJECT_ASSET_BASE}/pythongame/cosmos2.png`,
+      `${PROJECT_ASSET_BASE}/pythongame/cosmos3.png`,
+    ],
   },
 ]
 

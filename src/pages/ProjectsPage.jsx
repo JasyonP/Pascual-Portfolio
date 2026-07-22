@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 export default function ProjectsPage({ projects, onBack }) {
   const [selectedProject, setSelectedProject] = useState(null)
   const [currentImage, setCurrentImage] = useState(0)
